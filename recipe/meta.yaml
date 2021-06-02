@@ -1,4 +1,4 @@
-{% set version = '1.0.5' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/drtmle_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/drtmle/drtmle_{{ version }}.tar.gz
-  sha256: 3a19fdaa87cf329341e68b7a9d878d23f2fb1dad0d289170d15c112d5bbedfbe
+  sha256: aa6fde72defcb38fd2a4ca2d7b5057768bd2072ae130c9a96eb89a972d984621
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,12 +48,10 @@ test:
 about:
   home: https://github.com/benkeser/drtmle
   license: MIT
-  summary: Targeted minimum loss-based estimators of counterfactual means and causal effects
-    that are doubly-robust with respect both to consistency and asymptotic normality
-    (Benkeser et al (2017), <doi:10.1093/biomet/asx053>; MJ van der Laan (2014), <doi:10.1515/ijb-2012-0038>).
+  summary: Targeted minimum loss-based estimators of counterfactual means and causal effects that are doubly-robust with respect both to consistency and asymptotic normality (Benkeser et al (2017), <doi:10.1093/biomet/asx053>; MJ van der Laan (2014), <doi:10.1515/ijb-2012-0038>).
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
