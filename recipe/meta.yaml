@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/drtmle_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/drtmle/drtmle_{{ version }}.tar.gz
-  sha256: 41b8a1f9f03c6b26b6393c8eb5c7017e61084e6eab26e12521a4bc95fea5778b
+  sha256: a0af95c961f8e448cb7e983c145a64c513ffc390ceec60fa33469d78f7ef6d63
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
