@@ -1,11 +1,11 @@
-About r-drtmle
-==============
+About r-drtmle-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-drtmle-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/benkeser/drtmle
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-drtmle-feedstock/blob/main/LICENSE.txt)
 
 Summary: Targeted minimum loss-based estimators of counterfactual means and causal effects that are doubly-robust with respect both to consistency and asymptotic normality (Benkeser et al (2017), <doi:10.1093/biomet/asx053>; MJ van der Laan (2014), <doi:10.1515/ijb-2012-0038>).
 
