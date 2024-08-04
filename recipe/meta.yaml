@@ -1,6 +1,5 @@
 {% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-drtmle
@@ -13,8 +12,7 @@ source:
   sha256: a0af95c961f8e448cb7e983c145a64c513ffc390ceec60fa33469d78f7ef6d63
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
